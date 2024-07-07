@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Customers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            color: #333;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .sidebar .header div {
+            width: 40px;
+            height: 40px;
+            background-color: #6B46C1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        .sidebar .header span {
+            margin-left: 8px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sidebar nav a {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar nav a div {
+            width: 24px;
+            height: 24px;
+            background-color: #E2E8F0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        .sidebar nav a div img {
+            width: 16px;
+            height: 16px;
+        }
+        .sidebar .footer {
+            margin-top: auto;
+            padding: 8px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        .main-content .header input {
+            padding: 8px;
+            border: 1px solid #CBD5E0;
+            border-radius: 4px;
+        }
+        .main-content .content {
+            flex: 1;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #CBD5E0;
+            text-align: left;
+        }
+        th {
+            background-color: #F7FAFC;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            border: 1px solid #CBD5E0;
+            border-radius: 4px;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="header">
+            <div>W</div>
+            <span>Workspace</span>
+        </div>
+        <nav>
+            <a href="#">
+                <div><img src="home.jpg" alt="Home"></div>
+                Home
+            </a>
+            <a href="#">
+                <div><img src="customer.png" alt="Customers"></div>
+                Customers
+            </a>
+            <a href="#">
+                <div><img src="dept.png" alt="Departments"></div>
+                Departments
+            </a>
+            <a href="#">
+                <div><img src="media.png" alt="Media"></div>
+                Media
+            </a>
+        </nav>
+        <div class="footer">            
+            <a href="Account.html">My Account </a>  
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="title"><h2>Customers</h2></div>
+            <input type="text" placeholder="Search in Customers">
+        </div>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Department ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JRYT456</td>
+                        <td>UHDG</td>
+                        <td>John</td>
+                        <td>skadj@gmail.com</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>JHSAG636</td>
+                        <td>ASDFJ</td>
+                        <td>Jane</td>
+                        <td>skadj@gmail.com</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASJHSA77</td>
+                        <td>SAFEF</td>
+                        <td>Bob</td>
+                        <td>skadj@gmail.com</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KSAHKJ366</td>
+                        <td>AFEEE</td>
+                        <td>Mary</td>
+                        <td>skadj@gmail.com</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAKJHD35</td>
+                        <td>REYER</td>
+                        <td>Karan</td>
+                        <td>skadj@gmail.com</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KKHUASU33</td>
+                        <td>HJHGF</td>
+                        <td>Chrissy</td>
+                        <td>skadj@gmail.com</td>
+                        <td>500 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="Workspace.html">Back to Main Page</a>
+        </div>
+        <div class="pagination">
+            <button>&lt;</button>
+            <button>1</button>
+            <button>&gt;</button>
+        </div>
+    </div>
+
+</body>
+</html>
